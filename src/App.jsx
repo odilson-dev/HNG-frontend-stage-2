@@ -1,12 +1,7 @@
-import MyButton from "./components/Button";
+import ProductListing from "./components/ProductListing";
 
 function App() {
-  return (
-    <div>
-      <h1>Bienvenue dans mon appli</h1>
-      <MyButton />
-    </div>
-  );
+  return <ProductListing />;
 }
 
 export default App;
