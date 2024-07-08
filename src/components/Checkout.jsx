@@ -1,9 +1,14 @@
+import { Link } from "react-router-dom";
 export default function Checkout() {
   return (
     <div className="flex flex-col bg-gray-100">
       <div className="justify-center items-start py-6 pr-16 pl-24 w-full text-base font-medium text-left text-slate-800 max-md:pr-5 max-md:pl-8 max-md:max-w-full">
-        <span className="text-gray-500">Home / My Cart / </span>
-        <span className="text-slate-800"> Checkout </span>{" "}
+        <span className="text-gray-500">
+          <Link to="/">Home</Link> / <Link to="/my-cart">My Cart</Link> /{" "}
+        </span>
+        <span className="text-slate-800">
+          <Link to="/checkout">Checkout</Link>
+        </span>{" "}
       </div>
       <div className="flex flex-col self-center py-7 max-w-full bg-white rounded-2xl w-[471px]">
         <div className="justify-center items-start px-5 text-3xl font-bold text-slate-800 max-md:max-w-full">
@@ -193,9 +198,12 @@ export default function Checkout() {
             </div>
           </div>
         </div>
-        <div className="justify-center items-center self-center p-2 mt-6 max-w-full text-lg text-center text-white whitespace-nowrap rounded-xl bg-slate-800 w-[423px] max-md:px-5">
-          Continue
-        </div>
+        <Link
+          to="/payment-method"
+          className="justify-center items-center self-center p-2 mt-6 max-w-full text-lg text-center text-white whitespace-nowrap rounded-xl bg-slate-800 w-[423px] max-md:px-5"
+        >
+          <div>Continue</div>
+        </Link>
       </div>
     </div>
   );

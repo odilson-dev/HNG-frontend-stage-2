@@ -7,7 +7,9 @@ export default function ProductDetails() {
         <span className="text-gray-500">
           <Link to="/">Home</Link> / Airpods /{" "}
         </span>
-        <span className="text-slate-800">Airpods Max </span>{" "}
+        <span className="text-slate-800">
+          <Link to="/product-details">Airpods Max</Link>{" "}
+        </span>{" "}
       </div>
       <div className="self-center mt-24 w-full max-w-[1240px] max-md:mt-10 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
@@ -143,10 +145,10 @@ export default function ProductDetails() {
                 </div>
                 <div className="flex gap-5 justify-between mt-12 text-lg text-center max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
                   <div className="justify-center items-center px-3 py-4 text-white rounded-xl bg-slate-800 max-md:px-5">
-                    Buy Now
+                    <Link to="/my-cart">Buy Now</Link>
                   </div>
                   <div className="justify-center items-center px-3 py-4 rounded-xl border border-solid border-slate-800 text-slate-800 max-md:px-5">
-                    Add to Cart
+                    <Link to="/my-cart"> Add to Cart</Link>
                   </div>
                 </div>
               </div>

@@ -1,10 +1,19 @@
+import { Link } from "react-router-dom";
+
 export default function PaymentMethod() {
   return (
     <div className="flex flex-col bg-gray-100">
       <div className="justify-center items-start py-6 pr-16 pl-24 w-full text-base font-medium text-left text-slate-800 max-md:pr-5 max-md:pl-8 max-md:max-w-full">
-        <span className="text-gray-500">Home / My Cart / </span>{" "}
-        <span className="text-gray-500">Checkout /</span>
-        <span className="text-slate-800"> Payment Method </span>{" "}
+        <span className="text-gray-500">
+          <Link to="/">Home</Link> /<Link to="my-cart">My Cart</Link> /{" "}
+        </span>{" "}
+        <span className="text-gray-500">
+          <Link to="/checkout">Checkout</Link> /
+        </span>
+        <span className="text-slate-800">
+          {" "}
+          <Link to="/payment-method">Payment Method </Link>
+        </span>{" "}
       </div>
       <div className="flex flex-col self-center pt-11 pb-7 max-w-full bg-white rounded-2xl w-[471px]">
         <div className="flex flex-col max-md:max-w-full">
@@ -130,9 +139,12 @@ export default function PaymentMethod() {
             </div>
           </div>
         </div>
-        <div className="justify-center items-center self-center p-2 mt-60 max-w-full text-lg text-center text-white rounded-xl bg-slate-800 w-[423px] max-md:px-5 max-md:mt-10">
-          Make Payment
-        </div>
+        <Link
+          className="justify-center items-center self-center p-2 mt-60 max-w-full text-lg text-center text-white rounded-xl bg-slate-800 w-[423px] max-md:px-5 max-md:mt-10"
+          to="/card-payment"
+        >
+          <div>Make Payment</div>
+        </Link>
       </div>
     </div>
   );

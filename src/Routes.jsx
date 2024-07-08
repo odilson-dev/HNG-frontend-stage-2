@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
+import CardPayment from "./components/CardPayment.jsx";
 import Checkout from "./components/Checkout.jsx";
 import ErrorPage from "./components/ErrorPage.jsx";
 import MyCart from "./components/MyCarts.jsx";
+import PaymentMethod from "./components/PaymentMethod.jsx";
 import ProductDetails from "./components/ProductDetails.jsx";
 import ProductListing from "./components/ProductListing.jsx";
-import PaymentMethod from "./components/PaymentMethod.jsx";
-import CardPayment from "./components/CardPayment.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "mycart",
+    path: "my-cart",
     element: (
       <App>
         <MyCart />

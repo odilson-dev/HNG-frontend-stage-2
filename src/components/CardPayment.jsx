@@ -1,11 +1,21 @@
+import { Link } from "react-router-dom";
+
 export default function CardPaymentt() {
   return (
     <div className="flex flex-col bg-gray-100">
       <div className="justify-center items-start py-6 pr-16 pl-24 w-full text-base font-medium text-left text-slate-800 max-md:px-5 max-md:max-w-full">
-        <span className="text-gray-500">Home / My Cart / </span>{" "}
-        <span className="text-gray-500">Checkout /</span>{" "}
-        <span className="text-gray-500">Payment Method /</span>
-        <span className="text-slate-800"> Card Payment </span>{" "}
+        <span className="text-gray-500">
+          <Link to="/">Home</Link> / <Link to="/my-cart">My Cart</Link> /{" "}
+        </span>{" "}
+        <span className="text-gray-500">
+          <Link to="/checkout">Checkout</Link> /
+        </span>{" "}
+        <span className="text-gray-500">
+          <Link to="/payment-method">Payment Method</Link> /
+        </span>
+        <span className="text-slate-800">
+          <Link to="/card-payment"> Card Payment</Link>{" "}
+        </span>{" "}
       </div>
       <div className="flex flex-col items-center self-center px-5 py-20 max-w-full bg-white rounded-2xl w-[471px]">
         <div className="flex flex-col self-stretch pb-6 mt-5 text-base max-md:max-w-full">

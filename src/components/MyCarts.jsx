@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 export default function MyCarts() {
   return (
     <div className="flex flex-col bg-gray-100">
-      <div className="justify-center items-start py-6 pr-16 pl-24 w-full text-base font-medium text-center text-slate-800 max-md:pr-5 max-md:pl-8 max-md:max-w-full">
-        <span className="text-gray-500">Home / </span>
-        <span className="text-slate-800">My Cart </span>{" "}
+      <div className="justify-center items-start py-6 pr-16 pl-24 w-full text-base font-medium text-left text-slate-800 max-md:pr-5 max-md:pl-8 max-md:max-w-full">
+        <span className="text-gray-500">
+          <Link to="/">Home</Link> /{" "}
+        </span>
+        <span className="text-slate-800">
+          <Link to="/my-cart">My Cart</Link>{" "}
+        </span>{" "}
       </div>
       <div className="self-center mt-1.5 w-full max-w-[1240px] max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
@@ -331,7 +335,7 @@ export default function MyCarts() {
                   <div className="text-slate-800">$1095.00</div>
                 </div>
               </div>
-              <Link to="/Checkout">
+              <Link to="/checkout">
                 <div className="justify-center items-center p-2 mt-12 text-lg text-center text-white rounded-xl bg-slate-800 max-md:px-5 max-md:mt-10 max-md:max-w-full">
                   Proceed to Checkout
                 </div>
