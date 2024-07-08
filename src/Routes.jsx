@@ -5,6 +5,8 @@ import ErrorPage from "./components/ErrorPage.jsx";
 import MyCart from "./components/MyCarts.jsx";
 import ProductDetails from "./components/ProductDetails.jsx";
 import ProductListing from "./components/ProductListing.jsx";
+import PaymentMethod from "./components/PaymentMethod.jsx";
+import CardPayment from "./components/CardPayment.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +19,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "productDetails",
+    path: "product-details",
     element: (
       <App>
         <ProductDetails />
@@ -25,7 +27,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "MyCart",
+    path: "mycart",
     element: (
       <App>
         <MyCart />
@@ -33,10 +35,26 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "Checkout",
+    path: "checkout",
     element: (
       <App>
         <Checkout />
+      </App>
+    ),
+  },
+  {
+    path: "payment-method",
+    element: (
+      <App>
+        <PaymentMethod />
+      </App>
+    ),
+  },
+  {
+    path: "card-payment",
+    element: (
+      <App>
+        <CardPayment />
       </App>
     ),
   },
