@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <div className="flex flex-col pt-20 pb-7 mt-16 w-full bg-black max-md:mt-10 max-md:max-w-full">
-      <div className="flex gap-5 justify-between items-start self-center px-5 w-full max-w-[1134px] max-md:flex-wrap max-md:max-w-full">
+    <div className="flex flex-col pt-20 pb-6 mt-12 w-full bg-black max-md:mt-10 max-md:max-w-full">
+      <div className="flex gap-5 justify-center items-start self-center px-5 w-full max-w-[1134px] max-md:flex-wrap max-md:max-w-full">
         <div className="flex flex-col text-neutral-50">
           <div className="flex flex-col">
             <div className="flex gap-1 text-3xl font-bold text-white whitespace-nowrap">
@@ -17,11 +17,11 @@ export default function Footer() {
             </div>
             <div className="mt-6 text-base">Get 10% off your first order</div>
           </div>
-          <div className="flex gap-5 justify-between px-4 py-3 mt-4 text-base rounded-xl border-2 border-solid border-neutral-50">
+          <div className="flex gap-5 justify-between py-3 pr-10 pl-4 mt-4 text-base rounded border-2 border-solid border-neutral-50 max-md:pr-5">
             <div className="my-auto">Enter your email</div>
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/73e9b9f7f626202dd26ee2e6381b64a9ae4a7bda2c73a1bf17080cbf7b1560f1?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/6bac8a3a4556d00df359345f40c4304fa01a92d9d278e1cc8be218cdcd6e20d8?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
               className="shrink-0 w-6 aspect-square"
             />
           </div>
@@ -90,7 +90,7 @@ export default function Footer() {
             />
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3c7767ef3a0ae8aa8ff1d04db1807a8a15d2df3b438617ebfafb7d93a543738?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a45685c39d6312efb5d0e883fee16a2d14b1cf0019a6d59ea7f4fdd5ea9d1df5?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
               className="shrink-0 w-6 aspect-square"
             />
             <img
@@ -106,13 +106,13 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center px-16 pt-4 mt-24 w-full text-base text-white max-md:px-5 max-md:mt-10 max-md:max-w-full">
-        <div className="flex flex-col justify-center max-w-full w-[291px]">
+      <div className="flex flex-col items-center px-16 pt-4 mt-24 w-full text-base leading-6 text-white max-md:px-5 max-md:mt-10 max-md:max-w-full">
+        <div className="flex flex-col justify-center max-w-full w-[337px]">
           <div className="flex gap-1.5">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/207c5d33f1e035178e0be8d020049bff7b4add721531f45a07670b638424cd03?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
-              className="shrink-0 w-5 aspect-square"
+              className="shrink-0 my-auto w-5 aspect-square"
             />
             <div>Copyright Rimel 2022. All right reserved</div>
           </div>

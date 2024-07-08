@@ -3,21 +3,21 @@ import SubHeader from "./SubHeader";
 export default function Header() {
   return (
     <>
-      <div className="flex gap-0 justify-between items-center px-20 py-6 w-full border-b border-gray-500 border-solid max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+      <div className="flex gap-0 items-center px-20 py-6 w-full border-b border-gray-500 border-solid max-md:flex-wrap max-md:px-5 max-md:max-w-full">
         <div className="flex flex-col flex-1 justify-center items-start self-stretch my-auto text-3xl font-bold text-black whitespace-nowrap">
           <div className="flex gap-1">
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/d5ad1532e24788f4d21eb5fe20e61df21deb284fc39ef4797348b8479ecd81e9?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/1a14039f8c1bcad16b506141ba6c944fd9e665b8e349be125600911f16cee47e?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
               className="shrink-0 my-auto w-7 aspect-square"
             />
             <div>ShopNow</div>
           </div>
         </div>
-        <div className="flex gap-2 self-stretch p-3 text-lg font-medium text-gray-500 bg-white rounded-xl">
+        <div className="flex flex-1 gap-2 self-stretch p-3 text-lg font-medium text-gray-500 bg-white rounded-xl">
           <img
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/2afba2984802c8fd24e38e60d13322cad6cb83dc8761a445fe97b92b60cc7b52?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/8492cfded6401becf2806eff0681b0569808959177355b26466c11aef2f8ac30?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
             className="shrink-0 w-6 aspect-square"
           />
           <div className="my-auto">Search </div>
@@ -34,12 +34,12 @@ export default function Header() {
           <div className="flex gap-5 justify-between items-start">
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/966c2ba25475408bc2f167665e1958974ca33097d9ebf0b78e6d764fdeffc09a?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/96b0d0b2cb4dfbabc7ea17d69b44f3e6c80f9bf25e1a1c3acdcdd6809c40dc45?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
               className="shrink-0 w-6 aspect-square"
             />
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef0ca288f049e6f031825d5ad47db0d9abd3dcb916c271beeaea67bf6340ba39?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/d7263c13cd8feb4426db5129835e39662bfac95a3835c94754dfc8463574723c?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
               className="shrink-0 w-6 aspect-square"
             />
             <img

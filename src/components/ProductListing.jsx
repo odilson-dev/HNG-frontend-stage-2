@@ -1,13 +1,9 @@
-import Header from "./Header";
-
 export default function ProductListing() {
   return (
     <div className="flex flex-col bg-gray-100">
-      <Header />
-
       <div className="flex gap-2.5 justify-between px-20 py-6 w-full text-base font-medium text-center max-md:flex-wrap max-md:px-5 max-md:max-w-full">
         <div className="my-auto text-gray-500">
-          <span className="text-gray-500">Home / Airpods </span>{" "}
+          <span className="text-gray-500">Home /Airpods </span>
         </div>
         <div className="flex gap-2 text-slate-800">
           <div className="my-auto">Sort by</div>
