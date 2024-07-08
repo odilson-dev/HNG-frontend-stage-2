@@ -3,7 +3,7 @@ import SubHeader from "./SubHeader";
 export default function Header() {
   return (
     <>
-      <div className="flex gap-0   items-center px-20 py-6 w-full md:border-b border-gray-500 border-solid max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+      <div className="flex gap-0  px-20 py-6 w-full md:border-b border-gray-500 border-solid">
         <div className="flex flex-col flex-1 justify-center items-start self-stretch my-auto text-base md:text-3xl font-bold text-black whitespace-nowrap">
           <div className="flex gap-1">
             <img
@@ -22,7 +22,7 @@ export default function Header() {
           />
           <div className="my-auto">Search </div>
         </div>
-        <div className="md:flex hidden flex-1 gap-5 self-stretch pl-20 my-auto">
+        <div className="md:flex hidden flex-1 gap-5 self-stretch pl-20 my-auto justify-end">
           <div className="flex gap-1 self-start text-lg font-medium whitespace-nowrap text-slate-800">
             <div>EN</div>
             <img
