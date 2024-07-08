@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function ProductDetails() {
   return (
     <div className="flex flex-col bg-gray-100">
-      <div className="justify-center items-start py-6 pr-16 pl-24 w-full text-base font-medium text-center text-slate-800 max-md:pr-5 max-md:pl-8 max-md:max-w-full">
+      <div className="justify-center items-start py-6 pr-16 pl-24 w-full text-base font-medium text-left text-slate-800 max-md:pr-5 max-md:pl-8 max-md:max-w-full">
         <span className="text-gray-500">
           <Link to="/">Home</Link> / Airpods /{" "}
         </span>

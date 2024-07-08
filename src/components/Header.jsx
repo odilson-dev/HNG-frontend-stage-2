@@ -3,8 +3,8 @@ import SubHeader from "./SubHeader";
 export default function Header() {
   return (
     <>
-      <div className="flex gap-0 items-center px-20 py-6 w-full border-b border-gray-500 border-solid max-md:flex-wrap max-md:px-5 max-md:max-w-full">
-        <div className="flex flex-col flex-1 justify-center items-start self-stretch my-auto text-3xl font-bold text-black whitespace-nowrap">
+      <div className="flex gap-0   items-center px-20 py-6 w-full border-b border-gray-500 border-solid max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+        <div className="flex flex-col flex-1 justify-center items-start self-stretch my-auto text-base md:text-3xl font-bold text-black whitespace-nowrap">
           <div className="flex gap-1">
             <img
               loading="lazy"
@@ -14,7 +14,7 @@ export default function Header() {
             <div>ShopNow</div>
           </div>
         </div>
-        <div className="flex flex-1 gap-2 self-stretch p-3 text-lg font-medium text-gray-500 bg-white rounded-xl">
+        <div className="md:flex flex-1 gap-2 self-stretch p-3 text-lg font-medium text-gray-500 bg-white rounded-xl hidden">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/8492cfded6401becf2806eff0681b0569808959177355b26466c11aef2f8ac30?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
@@ -22,7 +22,7 @@ export default function Header() {
           />
           <div className="my-auto">Search </div>
         </div>
-        <div className="flex flex-1 gap-5 self-stretch pl-20 my-auto">
+        <div className="md:flex hidden flex-1 gap-5 self-stretch pl-20 my-auto">
           <div className="flex gap-1 self-start text-lg font-medium whitespace-nowrap text-slate-800">
             <div>EN</div>
             <img
@@ -49,7 +49,15 @@ export default function Header() {
             />
           </div>
         </div>
+        <div className="flex md:hidden gap-5 justify-between self-stretch text-xl font-bold text-black whitespace-nowrap max-w-[328px]">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e51487fafa692eb21dc95b366b1d8cbcba796b03fe9453fe43384d5a4dc3a420?apiKey=fbc24afb6ee6470b9b535d59cd9882f6&"
+            className="shrink-0 w-6 aspect-square"
+          />
+        </div>
       </div>
+
       <SubHeader />
     </>
   );
