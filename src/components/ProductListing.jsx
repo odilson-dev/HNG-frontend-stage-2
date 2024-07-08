@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ProductListing() {
   return (
     <div className="flex flex-col bg-gray-100">
@@ -73,9 +75,11 @@ export default function ProductListing() {
                   </div>
                 </div>
               </div>
-              <div className="justify-center items-center p-2 mx-5 mt-2.5 text-lg text-center text-white rounded-xl bg-slate-800 max-md:px-5 max-md:mx-2.5">
-                Add to cart
-              </div>
+              <Link to="/product-details">
+                <div className="justify-center items-center p-2 mx-5 mt-2.5 text-lg text-center text-white rounded-xl bg-slate-800 max-md:px-5 max-md:mx-2.5">
+                  Add to cart
+                </div>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
